@@ -1,0 +1,156 @@
+#--------------------------------------------Arturo Barrios Mendoza - Agosto 27, 2022 - 4 ejercicios
+
+
+
+#******************************************** Ejercicio 3 - Capitales *******************************
+
+#--------------------------------------------Es como un juego para adivinar las capitales de países de América del Sur
+#--------------------------------------------Se definen las funciones para cada país
+#--------------------------------------------Cada función tiene una condición para ver la respuesta
+def arg():
+    jugar=input("\n¡Excelente elección!\n\n¿Sabes cuál es su capital?\n\n¿Quieres conocer la respuesta? ")
+    if jugar=="sí" or jugar=="si" or jugar=="Sí" or jugar=="Si":
+        print("\nMe gusta tu energía.\n\nLa respuesta correcta es Buenos Aires")
+    elif jugar=="No" or jugar=="no":
+        print("\nEstá bien, confío en que conoces la respuesta.")
+    else:
+        print("\n¿Cómo dices? No te entendí.")
+def bol():
+    jugar=input("\n¡Excelente elección!\n\n¿Sabes cuál es su capital?\n\n¿Quieres conocer la respuesta? ")
+    if jugar=="sí" or jugar=="si" or jugar=="Sí" or jugar=="Si":
+        print("\nMe gusta tu energía.\n\nLa respuesta correcta es Sucre")
+    elif jugar=="No" or jugar=="no":
+        print("\nEstá bien, confío en que conoces la respuesta.")
+    else:
+        print("\n¿Cómo dices? No te entendí.")
+def brasil():
+    jugar=input("\n¡Excelente elección!\n\n¿Sabes cuál es su capital?\n\n¿Quieres conocer la respuesta? ")
+    if jugar=="sí" or jugar=="si" or jugar=="Sí" or jugar=="Si":
+        print("\nMe gusta tu energía.\n\nLa respuesta correcta es Brasilia")
+    elif jugar=="No" or jugar=="no":
+        print("\nEstá bien, confío en que conoces la respuesta.")
+    else:
+        print("\n¿Cómo dices? No te entendí.")
+def chile():
+    jugar=input("\n¡Excelente elección!\n\n¿Sabes cuál es su capital?\n\n¿Quieres conocer la respuesta? ")
+    if jugar=="sí" or jugar=="si" or jugar=="Sí" or jugar=="Si":
+        print("\nMe gusta tu energía.\n\nLa respuesta correcta es Santiago de Chile")
+    elif jugar=="No" or jugar=="no":
+        print("\nEstá bien, confío en que conoces la respuesta.")
+    else:
+        print("\n¿Cómo dices? No te entendí.")
+def col():
+    jugar=input("\n¡Excelente elección!\n\n¿Sabes cuál es su capital?\n\n¿Quieres conocer la respuesta? ")
+    if jugar=="sí" or jugar=="si" or jugar=="Sí" or jugar=="Si":
+        print("\nMe gusta tu energía.\n\nLa respuesta correcta es Bogotá")
+    elif jugar=="No" or jugar=="no":
+        print("\nEstá bien, confío en que conoces la respuesta.")
+    else:
+        print("\n¿Cómo dices? No te entendí.")
+def ecu():
+    jugar=input("\n¡Excelente elección!\n\n¿Sabes cuál es su capital?\n\n¿Quieres conocer la respuesta? ")
+    if jugar=="sí" or jugar=="si" or jugar=="Sí" or jugar=="Si":
+        print("\nMe gusta tu energía.\n\nLa respuesta correcta es Quito")
+    elif jugar=="No" or jugar=="no":
+        print("\nEstá bien, confío en que conoces la respuesta.")
+    else:
+        print("\n¿Cómo dices? No te entendí.")
+def guy():
+    jugar=input("\n¡Excelente elección!\n\n¿Sabes cuál es su capital?\n\n¿Quieres conocer la respuesta? ")
+    if jugar=="sí" or jugar=="si" or jugar=="Sí" or jugar=="Si":
+        print("\nMe gusta tu energía.\n\nLa respuesta correcta es Georgetown")
+    elif jugar=="No" or jugar=="no":
+        print("\nEstá bien, confío en que conoces la respuesta.")
+    else:
+        print("\n¿Cómo dices? No te entendí.")
+def para():
+    jugar=input("\n¡Excelente elección!\n\n¿Sabes cuál es su capital?\n\n¿Quieres conocer la respuesta? ")
+    if jugar=="sí" or jugar=="si" or jugar=="Sí" or jugar=="Si":
+        print("\nMe gusta tu energía.\n\nLa respuesta correcta es Asunción")
+    elif jugar=="No" or jugar=="no":
+        print("\nEstá bien, confío en que conoces la respuesta.")
+    else:
+        print("\n¿Cómo dices? No te entendí.")
+def peru():
+    jugar=input("\n¡Excelente elección!\n\n¿Sabes cuál es su capital?\n\n¿Quieres conocer la respuesta? ")
+    if jugar=="sí" or jugar=="si" or jugar=="Sí" or jugar=="Si":
+        print("\nMe gusta tu energía.\n\nLa respuesta correcta es Lima")
+    elif jugar=="No" or jugar=="no":
+        print("\nEstá bien, confío en que conoces la respuesta.")
+    else:
+        print("\n¿Cómo dices? No te entendí.")
+def suri():
+    jugar=input("\n¡Excelente elección!\n\n¿Sabes cuál es su capital?\n\n¿Quieres conocer la respuesta? ")
+    if jugar=="sí" or jugar=="si" or jugar=="Sí" or jugar=="Si":
+        print("\nMe gusta tu energía.\n\nLa respuesta correcta es Paramaribo")
+    elif jugar=="No" or jugar=="no":
+        print("\nEstá bien, confío en que conoces la respuesta.")
+    else:
+        print("\n¿Cómo dices? No te entendí.")
+def trini():
+    jugar=input("\n¡Excelente elección!\n\n¿Sabes cuál es su capital?\n\n¿Quieres conocer la respuesta? ")
+    if jugar=="sí" or jugar=="si" or jugar=="Sí" or jugar=="Si":
+        print("\nMe gusta tu energía.\n\nLa respuesta correcta es Puerto España")
+    elif jugar=="No" or jugar=="no":
+        print("\nEstá bien, confío en que conoces la respuesta.")
+    else:
+        print("\n¿Cómo dices? No te entendí.")
+def uru():
+    jugar=input("\n¡Excelente elección!\n\n¿Sabes cuál es su capital?\n\n¿Quieres conocer la respuesta? ")
+    if jugar=="sí" or jugar=="si" or jugar=="Sí" or jugar=="Si":
+        print("\nMe gusta tu energía.\n\nLa respuesta correcta es Montevideo")
+    elif jugar=="No" or jugar=="no":
+        print("\nEstá bien, confío en que conoces la respuesta.")
+    else:
+        print("\n¿Cómo dices? No te entendí.")
+def vene():
+    jugar=input("\n¡Excelente elección!\n\n¿Sabes cuál es su capital?\n\n¿Quieres conocer la respuesta? ")
+    if jugar=="sí" or jugar=="si" or jugar=="Sí" or jugar=="Si":
+        print("\nMe gusta tu energía.\n\nLa respuesta correcta es Caracas")
+    elif jugar=="No" or jugar=="no":
+        print("\nEstá bien, confío en que conoces la respuesta.")
+    else:
+        print("\n¿Cómo dices? No te entendí.")
+def guay():
+    jugar=input("\n¡Excelente elección!\n\n¿Sabes cuál es su capital?\n\n¿Quieres conocer la respuesta? ")
+    if jugar=="sí" or jugar=="si" or jugar=="Sí" or jugar=="Si":
+        print("\nMe gusta tu energía.\n\nLa respuesta correcta es Cayena")
+    elif jugar=="No" or jugar=="no":
+        print("\nEstá bien, confío en que conoces la respuesta.")
+    else:
+        print("\n¿Cómo dices? No te entendí.")
+#--------------------------------------------Se define la función principal
+def main():
+    pais=input("¡Hey!\n\n¡Juguemos un juego!\n\nDime un país de América del Sur ")
+    if "rgentina" in pais:
+        arg()
+    elif "olivia" in pais:
+        bol()
+    elif "rasil" in pais:
+        brasil()
+    elif "hile" in pais:
+        chile()
+    elif "olombia" in pais:
+        col()
+    elif "cuador" in pais:
+        ecu()
+    elif "uyana" in pais:
+        guy()
+    elif "araguay" in pais:
+        para()
+    elif "eru" in pais or "erú" in pais:
+        peru()
+    elif "urinam" in pais:
+        suri()
+    elif "rinidad" in pais:
+        trini()
+    elif "ruguay" in pais:
+        uru()
+    elif "enezuela" in pais:
+        vene()
+    elif "uayana" in pais:
+        guay()
+#--------------------------------------------Si se ingresa algo que no concuerda se pregunta si se trata de un país correcto
+    else:
+        print("\n¿Cómo dices?\n\n¿Ese es un país de América del Sur?")
+main()
