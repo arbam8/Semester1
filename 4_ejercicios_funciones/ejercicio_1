@@ -1,0 +1,51 @@
+#--------------------------------------------Arturo Barrios Mendoza - Agosto 27, 2022 - 4 ejercicios
+
+
+
+#******************************************** Ejercicio 1 - Tipo de cambio *******************************
+
+#--------------------------------------------Se definen las funciones de conversión a cada tipo de cambio
+def dolar():
+    q=float(input("\nPor favor ingresa la cantidad de pesos que deseas convertir a dólares estadounidenses: $ "))
+    r=q/19.97
+    dest=("dólares")
+    print("\nHoy",(q),"pesos mexicanos equivalen a",('{:.2f}'.format(r)),(dest))
+def euro():
+    q=float(input("\nPor favor ingresa la cantidad de pesos que deseas convertir a euros: $ "))
+    r=q/19.91
+    dest=("euros")
+    print("\nHoy",(q),"pesos mexicanos equivalen a",('{:.2f}'.format(r)),(dest))
+def libra():
+    q=float(input("\nPor favor ingresa la cantidad de pesos que deseas convertir a libras esterlinas: $ "))
+    r=q/23.47
+    dest=("libras esterlinas")
+    print("\nHoy",(q),"pesos mexicanos equivalen a",('{:.2f}'.format(r)),(dest))
+def lira():
+    q=float(input("\nPor favor ingresa la cantidad de pesos que deseas convertir a liras turcas: $ "))
+    r=q/1.10
+    dest=("liras turcas")
+    print("\nHoy",(q),"pesos mexicanos equivalen a",('{:.2f}'.format(r)),(dest))
+def lev():
+    q=float(input("\nPor favor ingresa la cantidad de pesos que deseas convertir a levs búlgaros: $ "))
+    r=q/10.20
+    dest=("levs búlgaros")
+    print("\nHoy",(q),"pesos mexicanos equivalen a",('{:.2f}'.format(r)),(dest))
+#--------------------------------------------Se define la función principal
+def main():
+#--------------------------------------------Se solicita un input para seleccionar el tipo de cambio
+    moneda=input('''
+    ¡Te damos la bienvenida!
+\n¿Qué tipo de cambio quieres conocer el día de hoy?
+\n¿Dólares estadounidenses, euros, libras esterlinas, liras turcas o levs búlgaros? ''')
+#--------------------------------------------Se llaman a las funciones de acuerdo con el texto ingresado
+    if "lar" in moneda:
+        dolar()
+    elif "uro" in moneda:
+        euro()
+    elif "ibra" in moneda:
+        libra()
+    elif "ira" in moneda:
+        lira()
+    elif "ev" in moneda:
+        lev()
+main()
