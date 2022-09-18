@@ -1,0 +1,20 @@
+#Agosto 17, 2022 - Sesión 04 (Librería math) -------------- Arturo Barrios Mendoza - 5 ejercicios
+
+import math as mt
+
+#---------------------------- Ejercicio 4 - Operaciones
+
+import math as mt
+x=float(input("Para realizar las operaciones, por favor ingrese 'x' "))
+y=float(input("ahora ingrese 'y' "))
+#print(x)
+#print(y)
+print((x),"+",(y),"es igual a",(x+y))
+print((x),"-",(y),"es igual a",(x-y))
+print((x),"*",(y),"es igual a",(x*y))
+print((x),"/",(y),"es igual a",(x/y))
+print("La raíz cuadrada de",(x),"es igual a",(mt.sqrt(x)))
+print("La raíz cuadrada de",(y),"es igual a",(mt.sqrt(y)))
+print((x),"al cubo es igual a",(x**3))
+print((y),"al cubo es igual a",(y**3))
+print((y),"/",(x),"es igual a",(y/x))
