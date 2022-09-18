@@ -1,0 +1,15 @@
+#Agosto 17, 2022 - Sesión 04 (Librería math) -------------- Arturo Barrios Mendoza - 5 ejercicios
+
+import math as mt
+
+#---------------------------- Ejercicio 5 - Problema velocidad
+
+d_k=152
+d_m=d_k*1000
+t_h=3.2
+t_s=3.2*60*60
+vel_kh=d_k/3.2
+vel_ms=d_m/t_s
+print("Pepe viaja a",(vel_kh),"km/h")
+print("\n")
+print("lo que es igual a",('{:.2f}'.format(vel_ms)),"m/s")
