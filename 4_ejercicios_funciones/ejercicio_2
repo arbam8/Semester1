@@ -1,0 +1,63 @@
+#--------------------------------------------Arturo Barrios Mendoza - Agosto 27, 2022 - 4 ejercicios
+
+
+
+#******************************************** Ejercicio 2 - Meses *******************************
+
+#--------------------------------------------Se definen las funciones para cada mes
+def ene():
+    print("\nEnero - January")
+def feb():
+    print("\nFebrero - February")
+def mar():
+    print("\nMarzo - March")
+def abr():
+    print("\nAbril - April")
+def may():
+    print("\nMayo - May")
+def jun():
+    print("\nJunio - June")
+def jul():
+    print("\nJulio - July")
+def ago():
+    print("\nAgosto - August")
+def sep():
+    print("\nSeptiembre - September")
+def octu():
+    print("\nOctubre - October")
+def nov():
+    print("\nNoviembre - November")
+def dic():
+    print("\nDiciembre - December")
+#--------------------------------------------Se define la función principal
+def main():
+    mes=input("¿Qué mes del año deseas conocer?\n\nEscribe un número del 1 al 12 ")
+    if mes=="1":
+        ene()
+    elif mes=="2":
+        feb()
+    elif mes=="3":
+        mar()
+    elif mes=="4":
+        abr()
+    elif mes=="5":
+        may()
+    elif mes=="6":
+        jun()
+    elif mes=="7":
+        jul()
+    elif mes=="8":
+        ago()
+    elif mes=="9":
+        sep()
+    elif mes=="10":
+        octu()
+    elif mes=="11":
+        nov()
+    elif mes=="12":
+        dic()
+#--------------------------------------------Si se ingresa un número o caracter fuera del rango 1-12
+#--------------------------------------------se informa que no se procederá correctamente
+    else:
+        print("\nDisculpe, su solicitud no ingresó correctamente.")
+main()
