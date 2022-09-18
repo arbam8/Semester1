@@ -1,0 +1,45 @@
+#----------------------------------------------------------Agosto 29, 2022
+#----------------------------------------------------------Funciones con parámetros
+'''
+def nombre(x,y):
+    print("Hola",x,"y",y)
+nombre("Daniel","grupo")
+'''
+
+def suma(a,b):
+    resultado=a+b
+    return resultado
+def resta(a,b):
+    resultado=a-b
+    return resultado
+def mult(a,b):
+    resultado=a*b
+    return resultado
+def div(a,b):
+    resultado=a/b
+    return resultado
+def main():
+    seleccion=input('''Selecciona una operación:
+    1.- Suma
+    2.- Resta
+    3.- Multiplicación
+    4.- División
+    '''
+    )
+    if seleccion=="1":
+        a=int(input("Ingresa el valor de a: "))
+        b=int(input("Ingresa el valor de b: "))
+        print("La suma de a+b es:",suma(a,b))
+    elif seleccion=="2":
+        a=int(input("Ingresa el valor de a: "))
+        b=int(input("Ingresa el valor de b: "))
+        print("La resta de a-b es:",resta(a,b))
+    elif seleccion=="3":
+        a=int(input("Ingresa el valor de a: "))
+        b=int(input("Ingresa el valor de b: "))
+        print("La multiplicación de axb es:",mult(a,b))
+    elif seleccion=="4":
+        a=int(input("Ingresa el valor de a: "))
+        b=int(input("Ingresa el valor de b: "))
+        print("La división de a/b es:",div(a,b))
+main()
