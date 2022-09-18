@@ -1,0 +1,115 @@
+#--------------------------------------------Arturo Barrios Mendoza - Agosto 27, 2022 - 4 ejercicios
+
+
+
+#******************************************** Ejercicio 4 - Cobro total *******************************
+
+#--------------------------------------------Se importa la librería math para usa ceil
+import math as mt
+#--------------------------------------------Se ingresa la cantidad de artículos - si es float se redondea (ceil)
+p=29.30
+print("\nLe damos la bienvenida a Farmacias TeQueremos.")
+preq=float(input("\nTenemos el paquete de 5 cubrebocas KN95 en $ 29.30.\n\n¿Cuántos paquetes desea comprar? "))
+q=mt.ceil(preq)
+#--------------------------------------------Se establecen las funciones para cada forma de pago
+def tdcsinint():
+    percent=1.05  
+    proceder=input("\nSu forma de pago generará un cargo del 5%. ¿Desea proceder con su compra? ")
+    sub=q*p
+    if "Sí" in proceder or "Si" in proceder or "sí" in proceder or "si" in proceder:
+        ex=input("\n¿Desea realizar su compra en 3, 6, o 12 meses? ")
+        if "3" in ex:
+            mens=3
+            print("\nEl subtotal por su compra de",(q),"paquetes es de $",('{:.2f}'.format(sub)))
+            print("\nEl total de su compra es de $",('{:.2f}'.format(sub*percent)))
+            print("\nSus exhibiciones serán de $",('{:.2f}'.format((sub*percent)/mens)))
+        elif "6" in ex:
+            mens=6
+            print("\nEl subtotal por su compra de",(q),"paquetes es de $",('{:.2f}'.format(sub)))
+            print("\nEl total de su compra es de $",('{:.2f}'.format(sub*percent)))
+            print("\nSus exhibiciones serán de $",('{:.2f}'.format((sub*percent)/mens)))
+        elif "12" in ex:
+            mens=12
+            print("\nEl subtotal por su compra de",(q),"paquetes es de $",('{:.2f}'.format(sub)))
+            print("\nEl total de su compra es de $",('{:.2f}'.format(sub*percent)))
+            print("\nSus exhibiciones serán de $",('{:.2f}'.format((sub*percent)/mens)))
+        else:
+            print("\nDisculpe, su solicitud no ha ingresado correctamente.")
+    elif "No" in proceder or "no" in proceder:
+        print("\nSu compra ha sido cancelada.")
+    else:
+        print("\nDisculpe, su solicitud no ha ingresado correctamente.")
+def tdcuna():
+    percent=1.025  
+    proceder=input("\nSu forma de pago generará un cargo del 2.5%. ¿Desea proceder con su compra? ")
+    sub=q*p
+    if "Sí" in proceder or "Si" in proceder or "sí" in proceder or "si" in proceder:
+        print("\nEl subtotal por su compra de",(q),"paquetes es de $",('{:.2f}'.format(sub)))
+        print("\nEl total de su compra es de $",('{:.2f}'.format(sub*percent)))
+    elif "No" in proceder or "no" in proceder:
+        print("\nSu compra ha sido cancelada.")
+    else:
+        print("\nDisculpe, su solicitud no ha ingresado correctamente.")
+def efec():
+    percent=.90  
+    proceder=input("\nSu forma de pago generará un descuento del 10%. ¿Desea proceder con su compra? ")
+    sub=q*p
+    if "Sí" in proceder or "Si" in proceder or "sí" in proceder or "si" in proceder:
+        print("\nEl subtotal por su compra de",(q),"paquetes es de $",('{:.2f}'.format(sub)))
+        print("\nEl total de su compra es de $",('{:.2f}'.format(sub*percent)))
+    elif "No" in proceder or "no" in proceder:
+        print("\nSu compra ha sido cancelada.")
+    else:
+        print("\nDisculpe, su solicitud no ha ingresado correctamente.")
+def cheque():
+    percent=1.045  
+    proceder=input("\nSu forma de pago generará un cargo del 4.5%. ¿Desea proceder con su compra? ")
+    sub=q*p
+    if "Sí" in proceder or "Si" in proceder or "sí" in proceder or "si" in proceder:
+        print("\nEl subtotal por su compra de",(q),"paquetes es de $",('{:.2f}'.format(sub)))
+        print("\nEl total de su compra es de $",('{:.2f}'.format(sub*percent)))
+    elif "No" in proceder or "no" in proceder:
+        print("\nSu compra ha sido cancelada.")
+    else:
+        print("\nDisculpe, su solicitud no ha ingresado correctamente.")
+def deb():
+    percent=.94 
+    proceder=input("\nSu forma de pago generará un descuento del 6%. ¿Desea proceder con su compra? ")
+    sub=q*p
+    if "Sí" in proceder or "Si" in proceder or "sí" in proceder or "si" in proceder:
+        print("\nEl subtotal por su compra de",(q),"paquetes es de $",('{:.2f}'.format(sub)))
+        print("\nEl total de su compra es de $",('{:.2f}'.format(sub*percent)))
+    elif "No" in proceder or "no" in proceder:
+        print("\nSu compra ha sido cancelada.")
+    else:
+        print("\nDisculpe, su solicitud no ha ingresado correctamente.")
+#--------------------------------------------Se establece la función principal
+def main():    
+    forma=input('''
+        Le ofrecemos las siguientes formas de pago:
+        
+        TDC Meses sin intereses    (1)
+        TDC Meses 1 exhibición     (2)
+        Pago en efectivo           (3)
+        Pago con cheque            (4)
+        Tarjeta de débito          (5)
+        
+        Por favor escriba el número de la forma de pago de su preferencia: ''')
+    if forma=="1":
+        tdcsinint()
+        print("\n¡Gracias por su preferencia!")
+    elif forma=="2":
+        tdcuna()
+        print("\n¡Gracias por su preferencia!")      
+    elif forma=="3":
+        efec()
+        print("\n¡Gracias por su preferencia!")      
+    elif forma=="4":
+        cheque()
+        print("\n¡Gracias por su preferencia!")      
+    elif forma=="5":
+        deb()
+        print("\n¡Gracias por su preferencia!")
+    else:
+        print("\nDisculpe, su solicitud no ingresó correctamente.\n\nVerifique su marcación.")
+main()
