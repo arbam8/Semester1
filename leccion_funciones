@@ -1,0 +1,61 @@
+#---------------------------------------------Agosto 24, 2022
+
+#---------------------------------------------Lección funciones
+'''
+def nombre():
+    x=input("Ingresa tu nombre: ")
+    x=len(x)
+    print("\nLa longitud de tu nombre es de: ",x,"caracteres.")
+nombre()
+'''
+#---------------------------------------------Función de suma
+def suma():
+    n1=float(input("Ingresa un número: "))
+    n2=float(input("Ingresa uotro número: "))
+    s=n1+n2
+    print("La suma de tus números es ",s)
+    
+#suma()
+#---------------------------------------------Función resta
+def resta():
+    n1=float(input("Ingresa un número: "))
+    n2=float(input("Ingresa uotro número: "))
+    r=n1-n2
+    print("La resta de tus números es ",r)
+    
+# resta()
+#---------------------------------------------Función multiplicación
+def mult():
+    n1=float(input("Ingresa un número: "))
+    n2=float(input("Ingresa uotro número: "))
+    m=n1*n2
+    print("La multiplicación de tus números es ",m)
+    
+#mult()
+#---------------------------------------------Función división
+def div():
+    n1=float(input("Ingresa un número: "))
+    n2=float(input("Ingresa uotro número: "))
+    d=n1/n2
+    print("La división de tus números es ",d)
+    
+#div()
+#---------------------------------------------Función principal (main)
+def main():
+    opcion=input('''
+1. Suma
+2. Resta
+3. Multiplicación
+4. División
+\n
+''')
+    if opcion=='1':
+        suma()
+    elif opcion=='2':
+        resta()
+    elif opcion=='3':
+        mult()
+    elif opcion=='4':
+        div()
+
+main()
