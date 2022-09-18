@@ -1,0 +1,83 @@
+#------------------------------------Agosto 22, 2022
+
+#------------------------------------Ejercicio 2-----------------------------------------------
+'''
+Programa que calcula la cantidad de dinero que generará una inversión, mostrando monto inicial, final,
+e intereses generados en cada cartera.
+    - El usuario ingresa el monto inicial
+    - El usuario escoge la moneda en la que quiere invertir (USD, Euros, Libras)
+    - El usuario ingresa el periodo de ahorro
+    - El usuario ingresa el tipo de inversión:
+        - Conservadora (5% de interés anual)
+        - Agresiva (6% de interés anual)
+        - Mixta (combinación de ambas)
+'''
+#------------------------------------Se declaran las variables de los tipos de cambio
+usd=(20.17)
+eu=(20.26)
+libra=(23.86)
+#------------------------------------Se ingresa el monto inicial
+q=float(input("¡Le damos la bienvenida al Banco Borreguín!\n\n¿Cuál es la cantidad que desea invertir con nosotros?\n\nPor favor ingrese su monto en MXN "))
+#------------------------------------Se ingresa el periodo de ahorro
+p=float(input("\n¿Durante cuántos años le gustaría mantener su cuenta con nosotros? "))
+#------------------------------------Se da la opción de seleccionar un tipo de cambio
+moneda=input("\n¿Desea que su inversión proceda en MXN, USD, Euros, o Libras Esterlinas? ")
+#------------------------------------Se da la opción de seleccionar el tipo de inversión
+tipniv=input("\nA continuación le presentamos los tipos de inversión de los que disponemos:\n\n-Conservadora: con un interés del 5% anual.\n-Agresiva: con un interés del 6% anual.\n-Mixta: una combinación de ambas carteras.\n\n¿Qué tipo de inversión desea? ")
+#------------------------------------Se calculan los capitales de cada tipo de inversión en MXN
+if "onservador" in tipniv:
+    cf=(q*(1+.05)**p)
+    interescons=(cf-q)
+    interesagr=0
+    interest=interescons
+if "gresiv" in tipniv:
+    cf=(q*(1+.06)**p)
+    interesagr=(cf-q)
+    interescons=0
+    interest=interesagr
+if "ixt" in tipniv:
+    pcons=float(input("\n¿Qué procentaje de su monto inicial desea que opere en la inversión conservadora?\n\n(No es necesario que escriba el símbolo '%') "))
+    pagr=(100-pcons)
+    cons=((q*(pcons/100))*(1.05)**p)
+    agr=((q*(pagr/100))*(1.06)**p)
+    cf=(cons+agr)
+    interescons=((q*(pcons/100))*(.05*p))
+    interesagr=((q*(pagr/100))*(.06*p))
+    interest=interescons+interesagr
+#------------------------------------Se hace la conversión al tipo de moneda elegido y la entrega de resultados
+if "MNX" in moneda or "mxn" in moneda or "eso" in moneda:
+    print("\n----------------------------------------------------------")
+    print("\nSu monto inicial es de MXN $",('{:.2f}'.format(q)))
+    print("\nLos intereses de su ganancia serán de MXN$",('{:.2f}'.format(interest)))
+    print("\nConformado por un interés conservador de MXN $",('{:.2f}'.format(interescons)))
+    print("\nY un interés agresivo de MXN $",('{:.2f}'.format(interesagr)))
+    print("\nSu monto final será de MXN $",('{:.2f}'.format(cf)))
+    print("\n----------------------------------------------------------")
+    print("\n¡En Banco Borreguín agradecemos mucho su preferencia!")
+if "USD" in moneda or "usd" in moneda or "lar" in moneda:
+    print("\n----------------------------------------------------------")
+    print("\nSu monto inicial es de US $",('{:.2f}'.format(q/usd)))
+    print("\nLos intereses de su ganancia serán de US $",('{:.2f}'.format(interest/usd)))
+    print("\nConformado por un interés conservador de US $",('{:.2f}'.format(interescons/usd)))
+    print("\nY un interés agresivo de US $",('{:.2f}'.format(interesagr/usd)))
+    print("\nSu monto final será de US $",('{:.2f}'.format(cf/usd)))
+    print("\n----------------------------------------------------------")
+    print("\n¡En Banco Borreguín agradecemos mucho su preferencia!")
+if "EU" in moneda or "eu" in moneda or "uro" in moneda:
+    print("\n----------------------------------------------------------")
+    print("\nSu monto inicial es de €",('{:.2f}'.format(q/eu)))
+    print("\nLos intereses de su ganancia serán de €",('{:.2f}'.format(interest/eu)))
+    print("\nConformado por un interés conservador de €",('{:.2f}'.format(interescons/eu)))
+    print("\nY un interés agresivo de €",('{:.2f}'.format(interesagr/eu)))
+    print("\nSu monto final será de €",('{:.2f}'.format(cf/eu)))
+    print("\n----------------------------------------------------------")
+    print("\n¡En Banco Borreguín agradecemos mucho su preferencia!")
+if "ibra" in moneda:
+    print("\n----------------------------------------------------------")
+    print("\nSu monto inicial es de £",('{:.2f}'.format(q/libra)))
+    print("\nLos intereses de su ganancia serán de £",('{:.2f}'.format(interest/libra)))
+    print("\nConformado por un interés conservador de £",('{:.2f}'.format(interescons/libra)))
+    print("\nY un interés agresivo de £",('{:.2f}'.format(interesagr/libra)))
+    print("\nSu monto final será de £",('{:.2f}'.format(cf/libra)))
+    print("\n----------------------------------------------------------")
+    print("\n¡En Banco Borreguín agradecemos mucho su preferencia!")
