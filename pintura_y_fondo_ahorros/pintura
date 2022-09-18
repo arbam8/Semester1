@@ -1,0 +1,108 @@
+#------------------------------------Agosto 22, 2022
+
+#------------------------------------Ejercicio 1-----------------------------------------------
+'''
+Programa que calcula la cantidad de litros de pintura necesarios para pintar una superficie.
+El programa lee el área de la superficie y la cantidad de metros que se pueden pintar con un litro de pintura.
+Muestra la cantidad de litros que se deben comprar y cuánto costará
+    - El usuario puede ingresar si la superficie es un:
+        - Cuadrado
+        - Rectángulo
+        - Círculo
+        - Triángulo equilátero
+        - Triángulo escaleno
+    - El usuario puede ingresar si la superficie a pintar es:
+        - Clara (requiere 1 pasada de pintura)
+        - Media (requiere 2 pasadas de pintura)
+        - Oscura (requiere 3 pasadas de pintura)
+    - Cada cubeta contiene 4 galones de pintura
+    - Cada cubeta cuesta $2,800
+'''
+#------------------------------------Se importa la librería math
+import math as mt
+#------------------------------------Se declaran las variables
+f=input("¿Su superficie es un cuadrado, un rectángulo, un círculo, un triángulo equilátero o un triángulo rectángulo?  ")
+area=()
+pasadas=()
+lxm2=(10)
+gal=(3.785)
+cub=(gal*4)
+litros=()
+cubetas=()
+pxcub=(2800)
+sub=()
+iva=()
+total=()
+#------------------------------------Se determinan la forma y el area
+#------------------------------------No importa si el usario usa la primera letra mayúscula o minúscula
+#------------------------------------Tampoco importa si usa acentos o no, o si escribe más cosas
+if "uadrad" in f:
+    b1=float(input("\n""Para calcular el área de su cuadrado, por favor ingrese la medida del lado en metros "))
+    area=(b1*b1)
+if "ectángul" in f or "ectangul" in f:
+    if "riángul" in f or "riangul" in f:
+        b1=float(input("\n""Para calcular el área de su triángulo rectángulo, por favor ingrese la medida de la base en metros "))
+        b2=float(input("\n""por favor también ingrese la medida de la altura en metros "))
+        area=((b1*b2)/2)
+    else:
+        b1=float(input("\n""Para calcular el área de su rectángulo, por favor ingrese la medida de la base en metros "))
+        b2=float(input("\n""por favor también ingrese la medida de la altura en metros "))
+        area=(b1*b2)
+if "írcul" in f or "ircul" in f:
+    r=float(input("\n""Para calcular el área de su círculo, por favor ingrese la medida del radio en metros "))
+    area=((mt.pi)*r**2)
+if "riángulo e" in f or "riangulo e" in f:
+    a=float(input("\n""Para calcular el área de su triángulo equilátero, por favor ingrese la altura en metros "))
+    area=(mt.sqrt(3)/4)*(a**2)
+#------------------------------------Se determina el tono y las manos de pintura necesarias
+#------------------------------------Tampoco importa la primera letra ni los acentos
+#------------------------------------En esta sección también se calculan los litros, las cubetas y el precio
+tone=(input("\n""¿Su supercifie actualmente es clara, media u oscura? "))
+if "lara" in tone:
+    pasadas=1
+    litros=(area/lxm2)*pasadas
+    cubetas=(mt.ceil(litros/cub))
+    print("\n""---------------------------------------------------------")
+    print("\n""El área de su superficie es de",('{:.2f}'.format(area)),"metros cuadrados.")
+    print("\n""Esta superficie clara requiere",('{:.2f}'.format(litros)),"litros de pintura.")
+    print("\n""Las cubetas de pintura que usted necesita son: ",(cubetas))
+    print("\n""(Cada cubeta contiene 4 galones de pintura.)")
+    print("\n""---------------------------------------------------------")
+    print("\n""Los datos de su compra son:")
+    sub=(cubetas*pxcub)
+    iva=(sub*0.16)
+    print("\n""Subtotal: $",('{:.2f}'.format(sub)))
+    print("\n""IVA:      $",('{:.2f}'.format(iva)))
+    print("\n""Total:    $",('{:.2f}'.format(sub+iva)))
+if "edia" in tone:
+    pasadas=1
+    litros=(area/lxm2)*pasadas
+    cubetas=(mt.ceil(litros/cub))
+    print("\n""---------------------------------------------------------")
+    print("\n""El área de su superficie es de",('{:.2f}'.format(area)),"metros cuadrados.")
+    print("\n""Esta superficie media requiere",('{:.2f}'.format(litros)),"litros de pintura.")
+    print("\n""Las cubetas de pintura que usted necesita son: ",(cubetas))
+    print("\n""(Cada cubeta contiene 4 galones de pintura.)")
+    print("\n""---------------------------------------------------------")
+    print("\n""Los datos de su compra son:")
+    sub=(cubetas*pxcub)
+    iva=(sub*0.16)
+    print("\n""Subtotal: $",('{:.2f}'.format(sub)))
+    print("\n""IVA:      $",('{:.2f}'.format(iva)))
+    print("\n""Total:    $",('{:.2f}'.format(sub+iva)))
+if "scura" in tone:
+    pasadas=1
+    litros=(area/lxm2)*pasadas
+    cubetas=(mt.ceil(litros/cub))
+    print("\n""---------------------------------------------------------")
+    print("\n""El área de su superficie es de",('{:.2f}'.format(area)),"metros cuadrados.")
+    print("\n""Esta superficie oscura requiere",('{:.2f}'.format(litros)),"litros de pintura.")
+    print("\n""Las cubetas de pintura que usted necesita son: ",(cubetas))
+    print("\n""(Cada cubeta contiene 4 galones de pintura.)")
+    print("\n""---------------------------------------------------------")
+    print("\n""Los datos de su compra son:")
+    sub=(cubetas*pxcub)
+    iva=(sub*0.16)
+    print("\n""Subtotal: $",('{:.2f}'.format(sub)))
+    print("\n""IVA:      $",('{:.2f}'.format(iva)))
+    print("\n""Total:    $",('{:.2f}'.format(sub+iva)))
