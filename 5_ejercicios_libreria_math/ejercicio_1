@@ -1,0 +1,29 @@
+#Agosto 17, 2022 - Sesión 04 (Librería math) -------------- Arturo Barrios Mendoza - 5 ejercicios
+
+import math as mt
+
+#----------------------------
+'''
+#help (mt)
+p=mt.pi
+print('{:.2f}'.format(p))
+'''
+#----------------------------
+'''
+res= (25+12)/mt.sqrt(20)
+print('{:.2f}'.format(res))
+'''
+#----------------------------
+'''
+p=mt.pi
+c=mt.ceil(p)
+f=mt.floor(p)
+print('Pi (',('{:.4f}'.format(p)),') se encuentra entre ',(f),'y ',(c))
+'''
+#---------------------------- Ejercicio 1 - Área de un triángulo
+
+import math as mt
+a=float(input("Para calcular el área del triángulo, por favor ingrese 'a' "))
+area=(mt.sqrt(3)/4)*(a**2)
+print("\n")
+print("El área para un triángulo con 'a' de",(a),"cm, es de",('{:.2f}'.format(area)),"cm2.")
