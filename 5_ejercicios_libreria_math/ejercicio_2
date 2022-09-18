@@ -1,0 +1,14 @@
+#Agosto 17, 2022 - Sesión 04 (Librería math) -------------- Arturo Barrios Mendoza - 5 ejercicios
+
+import math as mt
+
+#---------------------------- Ejercicio 2 - Perímetro y área de un círculo
+
+x=float(input("Para calcular el perímetro y área del círculo, por favor ingrese el radio: "))
+pi=3.1416
+p=2*(pi)*x
+a=(pi)*(x**2)
+print("\n")
+print("El perímetro de un círculo con radio de",(x),"cm es de",('{:.2f}'.format(p)),"cm,")
+print("\n")
+print("mientras que su área es de",('{:.2f}'.format(a)),"cm2")
