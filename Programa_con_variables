@@ -1,0 +1,26 @@
+#Sesión 03 - Programas con variables - 15 de agosto,2022
+#Programa que calcula precio de naranjas tomando en cuenta el precio por kilo, la cantidad comprada y el IVA
+
+'''
+Equipo:
+Arturo Barrios Mendoza (A01168331)
+Maximiliano De La Cruz Lima (A01798048)
+Tadeo Angeles Alamos (A01798500)
+'''
+
+pxkilo=20
+cantidad=float(input("¿Cuántos kilos de naranja quieres comprar?  "))
+subtotal=cantidad*pxkilo
+iva=subtotal*.16
+
+
+print("\n")
+print("---------------------------")
+print("\n")
+print("Precio por kilo = $" , round(pxkilo,2))
+print("\n")
+print("---------------------------")
+print("\n")
+print("Subtotal =  $" , round(subtotal,2))
+print("IVA = $" , round(iva,2))
+print("Total = $" , subtotal+iva)
