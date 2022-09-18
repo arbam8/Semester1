@@ -1,0 +1,15 @@
+#Agosto 17, 2022 - Sesión 04 (Librería math) -------------- Arturo Barrios Mendoza - 5 ejercicios
+
+import math as mt
+
+#---------------------------- Ejercicio 3 - Área de un trapecio
+
+b1=float(input("Para calcular el área del trapecio, por favor ingrese la base 1 "))
+b2=float(input("por favor ingrese también la base 2 "))
+a=float(input("y la altura "))
+#print(b1)
+#print(b2)
+#print(a)
+area=((b1+b2)*a)/2
+print("\n")
+print("El área de su trapecio es de ",('{:.2f}'.format(area)),"cm2.")
